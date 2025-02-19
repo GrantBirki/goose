@@ -8,7 +8,7 @@ const fakeProviderState: ProviderState[] = [
   {
     id: 'openai',
     name: 'OpenAI',
-    isConfigured: false,
+    isConfigured: true,
     metadata: null,
   },
   {
@@ -19,7 +19,7 @@ const fakeProviderState: ProviderState[] = [
   },
   {
     id: 'groq',
-    name: 'Grok',
+    name: 'Groq',
     isConfigured: false,
     metadata: null,
   },

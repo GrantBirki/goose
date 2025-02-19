@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from '../../../../../ui/button';
 import clsx from 'clsx';
 import { TooltipWrapper } from './TooltipWrapper';
-import { Check, Plus, RefreshCw, Rocket, Settings, X } from 'lucide-react';
+import { Check, CircleHelp, Plus, RefreshCw, Rocket, Settings, X } from 'lucide-react';
 
 interface ActionButtonProps extends React.ComponentProps<typeof Button> {
   /** Icon component to render, e.g. `RefreshCw` from lucide-react */
@@ -81,11 +81,7 @@ export function GreenCheckButton({
 }
 
 export function ExclamationButton({ tooltip, className, ...props }: ActionButtonProps) {
-  return (
-    <ActionButton tooltip={tooltip} onClick={() => {}} {...props}>
-      !
-    </ActionButton>
-  );
+  return <ActionButton icon={CircleHelp} tooltip={tooltip} onClick={() => {}} {...props} />;
 }
 
 export function GearSettingsButton({ tooltip, className, ...props }: ActionButtonProps) {

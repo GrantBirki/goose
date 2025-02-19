@@ -24,6 +24,7 @@ interface ProviderNameAndStatusProps {
 }
 
 function ProviderNameAndStatus({ name, isConfigured }: ProviderNameAndStatusProps) {
+  console.log(`Provider Name: ${name}, Is Configured: ${isConfigured}`);
   const ollamaNotConfigured = !isConfigured && name === 'Ollama';
 
   return (
